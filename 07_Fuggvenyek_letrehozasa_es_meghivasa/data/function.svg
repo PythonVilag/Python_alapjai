@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="3840"
+   height="2160"
+   viewBox="0 0 1016 571.5"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="function.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.38885732"
+     inkscape:cx="1531.41"
+     inkscape:cy="1190.6681"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="2350.4765"
+       y="1080.0877"
+       width="126.01023"
+       height="146.58333"
+       id="rect120857" />
+    <rect
+       x="1514.6944"
+       y="828.06721"
+       width="833.21049"
+       height="486.03945"
+       id="rect79077" />
+    <rect
+       x="488.61109"
+       y="586.33331"
+       width="532.32893"
+       height="54.004379"
+       id="rect26755" />
+    <rect
+       x="1764.1432"
+       y="666.05406"
+       width="550.33038"
+       height="69.434207"
+       id="rect13031" />
+    <marker
+       style="overflow:visible"
+       id="TriangleOutL"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path7215" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleOutL-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path7215-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleOutL-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path7215-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleOutL-0-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path7215-7-1" />
+    </marker>
+    <rect
+       x="488.61108"
+       y="586.33331"
+       width="532.32892"
+       height="54.004379"
+       id="rect26755-0" />
+    <rect
+       x="488.61108"
+       y="586.33331"
+       width="591.47658"
+       height="48.861104"
+       id="rect26755-1" />
+    <rect
+       x="488.61108"
+       y="586.33331"
+       width="565.76021"
+       height="54.004379"
+       id="rect26755-3" />
+    <rect
+       x="488.61108"
+       y="586.33331"
+       width="565.76019"
+       height="54.004379"
+       id="rect26755-3-8" />
+  </defs>
+  <g
+     inkscape:label="Réteg 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000;stroke:none;stroke-width:0.499999;stroke-miterlimit:3"
+       id="rect846"
+       width="300"
+       height="200"
+       x="337.74921"
+       y="165.50673"
+       ry="0.12182105"
+       sodipodi:insensitive="true" />
+    <path
+       style="fill:#0000ff;stroke:#0000ff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutL)"
+       d="M 96.69839,199.05517 H 296.6984"
+       id="path6710" />
+    <path
+       style="fill:#d40000;stroke:#d40000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutL-0)"
+       d="M 645.93553,265.36082 H 845.93554"
+       id="path6710-0" />
+    <path
+       style="fill:#0000ff;stroke:#0000ff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutL)"
+       d="M 96.698386,307.92114 H 296.6984"
+       id="path7341" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,68.721649,-5.443299)"
+       id="text13029"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect13031);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="1764.1426"
+         y="702.5479"
+         id="tspan138943"><tspan
+           style="fill:#ffffff"
+           id="tspan138941">&lt;függvény neve&gt;</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,0,21.773196)"
+       id="text26753"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect26755);fill:#0000ff;fill-opacity:1;stroke:none"><tspan
+         x="488.61133"
+         y="622.8272"
+         id="tspan138945">&lt;egyik bemenet neve&gt;</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-4.1035143,124.59138)"
+       id="text26753-1"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect26755-0);fill:#0000ff;fill-opacity:1;stroke:none"><tspan
+         x="488.61133"
+         y="622.8272"
+         id="tspan138947">&lt;másik bemenet neve&gt;</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,553.15422,78.323344)"
+       id="text26753-3"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect26755-3);fill:#0000ff;fill-opacity:1;stroke:none"><tspan
+         x="488.61133"
+         y="622.8272"
+         id="tspan138951"><tspan
+           style="fill:#d40000"
+           id="tspan138949">&lt;visszatérési érték&gt;</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-14.28866,4.7628866)"
+       id="text79075"
+       style="font-style:normal;font-weight:normal;font-size:74.6667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect79077);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="1514.6953"
+         y="896.1871"
+         id="tspan138955"><tspan
+           style="fill:#ffffff"
+           id="tspan138953">&lt;számold ki a </tspan></tspan><tspan
+         x="1514.6953"
+         y="989.52048"
+         id="tspan138959"><tspan
+           style="fill:#ffffff"
+           id="tspan138957">&lt;visszatérési érték&gt; </tspan></tspan><tspan
+         x="1514.6953"
+         y="1082.8539"
+         id="tspan138963"><tspan
+           style="fill:#ffffff"
+           id="tspan138961">-et a bemenetek </tspan></tspan><tspan
+         x="1514.6953"
+         y="1176.1872"
+         id="tspan138967"><tspan
+           style="fill:#ffffff"
+           id="tspan138965">segítségével&gt;</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text120855"
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;white-space:pre;shape-inside:url(#rect120857)" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect138713"
+       width="244.94846"
+       height="132"
+       x="366.06183"
+       y="205.48453"
+       ry="0.12182105" />
+  </g>
+</svg>
