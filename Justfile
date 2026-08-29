@@ -44,15 +44,15 @@ prek:
     uv run prek run --all-files
 
 [group("build")]
-build-notebook lecke notebook mode="edit":
+build-notebook lecke notebook mode="edit" code_flag="--show-code":
     uv run marimo export html-wasm \
         {{ lecke }}/{{ notebook }}.py \
         --output docs/{{ notebook }} \
-        --mode {{ mode }} --show-code --force
+        --mode {{ mode }} {{ code_flag }} --force
 
 [group("build")]
 build-notebooks:
     just build-notebook 00_Bevezetes_es_kurzusinformaciok 00_Bevezetes_es_kurzusinformaciok
-    just build-notebook 00_Bevezetes_es_kurzusinformaciok 00_Bevezetes_es_kurzusinformaciok_kviz run
+    just build-notebook 00_Bevezetes_es_kurzusinformaciok 00_Bevezetes_es_kurzusinformaciok_kviz run --no-show-code
     just build-notebook 01_A_Python_programozasi_nyelvrol 01_A_Python_programozasi_nyelvrol
-    just build-notebook 01_A_Python_programozasi_nyelvrol 01_A_Python_programozasi_nyelvrol_kviz run
+    just build-notebook 01_A_Python_programozasi_nyelvrol 01_A_Python_programozasi_nyelvrol_kviz run --no-show-code
