@@ -7,7 +7,6 @@ app = marimo.App(width="medium")
 @app.cell
 def _():
     import marimo as mo
-
     return (mo,)
 
 
@@ -84,9 +83,7 @@ def _(mo):
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""Sokszor segít, ha már az elején látjuk, hogy pontosan miket is fogunk megtanulni. Lehet, hogy az itt felsorolt fogalmak közül sokat még nem ismersz, de ez nem probléma. Azért vagy itt (nagyon helyesen), hogy ezekkel megismerkedj."""
-    )
+    mo.md(r"""Sokszor segít, ha már az elején látjuk, hogy pontosan miket is fogunk megtanulni. Lehet, hogy az itt felsorolt fogalmak közül sokat még nem ismersz, de ez nem probléma. Azért vagy itt (nagyon helyesen), hogy ezekkel megismerkedj.""")
     return
 
 
@@ -265,9 +262,7 @@ def _(mo):
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""Hogy a tananyag ~~kevésbé unalmas~~  könnyebben megjegyezhető legyen, megpróbáltam néhány helyen meme-ekkel kiegészíteni, melyeket a [https://www.reddit.com/r/ProgrammerHumor/](https://www.reddit.com/r/ProgrammerHumor/)-ról szereztem be."""
-    )
+    mo.md(r"""Hogy a tananyag ~~kevésbé unalmas~~  könnyebben megjegyezhető legyen, megpróbáltam néhány helyen meme-ekkel kiegészíteni, melyeket a [https://www.reddit.com/r/ProgrammerHumor/](https://www.reddit.com/r/ProgrammerHumor/)-ról szereztem be.""")
     return
 
 

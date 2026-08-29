@@ -1,0 +1,15 @@
+# Project Metadata
+[project]
+  name = "python-alapjai"
+  version = "0.0.0"
+  description = "Python alapjai kurzus"
+  authors = [{ name = "PythonVilag", email = "info@pythonvilag.hu" }]
+  requires-python = ">=3.14"
+  dependencies = ["marimo==0.24.0"]
+
+[dependency-groups]
+  dev = ["prek==0.4.14"]
+
+[tool.uv]
+  package = false
+  exclude-newer = "1 week"

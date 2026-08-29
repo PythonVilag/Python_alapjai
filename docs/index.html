@@ -3,21 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="Python Alapjai - kurzusok és jegyzetek a Python programozás alapjairól."
+    />
     <title>Python Alapjai</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        /* Blowfish "ocean" scheme */
+        --bg: #0f172a;
+        --surface: #1e293b;
+        --border: #334155;
+        --text: #f1f5f9;
+        --text-muted: #94a3b8;
+        --primary: #60a5fa;
+        --secondary: #22d3ee;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          sans-serif;
+        line-height: 1.5;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0 0 auto 0;
+        height: 3px;
+        background: linear-gradient(
+          to right,
+          var(--primary),
+          var(--secondary)
+        );
+      }
+
+      main {
+        width: 100%;
+        max-width: 40rem;
+        padding: 3rem 1.5rem;
+      }
+
+      .kicker {
+        margin: 0 0 0.25rem;
+        color: var(--secondary);
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 2rem;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+
+      .courses {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .courses a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.25rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 0.75rem;
+        color: inherit;
+        text-decoration: none;
+        transition:
+          border-color 0.15s ease,
+          transform 0.15s ease;
+      }
+
+      .courses a:hover,
+      .courses a:focus-visible {
+        border-color: var(--primary);
+        transform: translateY(-2px);
+      }
+
+      .courses a:hover .arrow,
+      .courses a:focus-visible .arrow {
+        color: var(--primary);
+        transform: translateX(0.25rem);
+      }
+
+      .num {
+        padding: 0.35rem 0.6rem;
+        border: 1px solid rgba(34, 211, 238, 0.25);
+        border-radius: 0.5rem;
+        background: rgba(34, 211, 238, 0.1);
+        color: var(--secondary);
+        font-size: 0.85rem;
+        font-weight: 600;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .arrow {
+        margin-left: auto;
+        color: var(--text-muted);
+        transition:
+          color 0.15s ease,
+          transform 0.15s ease;
+      }
+    </style>
   </head>
   <body>
-    <h1>Python Alapjai - Kurzusok</h1>
-    <ul>
-      <li>
-        <a href="00_Bevezetes_es_kurzusinformaciok/"
-          >Bevezetés és Kurzusinformációk</a
-        >
-      </li>
-      <li>
-        <a href="01_A_Python_programozasi_nyelvrol/"
-          >A Python programozási nyelvről</a
-        >
-      </li>
-    </ul>
+    <main>
+      <header>
+        <p class="kicker">Python Világ</p>
+        <h1>Python Alapjai</h1>
+      </header>
+      <ul class="courses">
+        <li>
+          <a href="00_Bevezetes_es_kurzusinformaciok/">
+            <span class="num">00</span>
+            <span>Bevezetés és Kurzusinformációk</span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+        <li>
+          <a href="01_A_Python_programozasi_nyelvrol/">
+            <span class="num">01</span>
+            <span>A Python programozási nyelvről</span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
