@@ -9,6 +9,8 @@ clean:
         .venv
     find . -type f -name ".DS_Store" -delete
     find . -type d -name "__pycache__" -exec rm -r {} +
+    find . -type d -name "__marimo__" -exec rm -r {} +
+    find docs -mindepth 1 -maxdepth 1 ! -name "index.html" -exec rm -r {} +
 
 [group("lifecycle")]
 install *args:
@@ -42,13 +44,15 @@ prek:
     uv run prek run --all-files
 
 [group("build")]
-build-notebook notebook:
+build-notebook lecke notebook mode="edit":
     uv run marimo export html-wasm \
-        {{ notebook }}/{{ notebook }}.py \
+        {{ lecke }}/{{ notebook }}.py \
         --output docs/{{ notebook }} \
-        --mode edit --show-code --force
+        --mode {{ mode }} --show-code --force
 
 [group("build")]
 build-notebooks:
-    just build-notebook 00_Bevezetes_es_kurzusinformaciok
-    just build-notebook 01_A_Python_programozasi_nyelvrol
+    just build-notebook 00_Bevezetes_es_kurzusinformaciok 00_Bevezetes_es_kurzusinformaciok
+    just build-notebook 00_Bevezetes_es_kurzusinformaciok 00_Bevezetes_es_kurzusinformaciok_kviz run
+    just build-notebook 01_A_Python_programozasi_nyelvrol 01_A_Python_programozasi_nyelvrol
+    just build-notebook 01_A_Python_programozasi_nyelvrol 01_A_Python_programozasi_nyelvrol_kviz run

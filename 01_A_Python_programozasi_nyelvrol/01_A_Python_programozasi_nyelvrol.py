@@ -1,345 +1,281 @@
 import marimo
 
-__generated_with = "0.16.5"
-app = marimo.App(width="medium")
+__generated_with = "0.24.0"
+app = marimo.App(width="medium", app_title="A Python programozási nyelvről")
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _():
     import marimo as mo
+
     return (mo,)
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""[⚡ A kód futtatható verziójának a megnyitása ⚡](#)""")
+    mo.md(r"""
+    [⚡ A kód futtatható verziójának a megnyitása ⚡](https://python-alapjai.pythonvilag.hu/01_A_Python_programozasi_nyelvrol/)
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""# Bevezetés""")
+    mo.md(r"""
+    # Általános információk
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
-    Kezdjük az alapoktól!
-
-    A **Python alapjai** sorozat elkezdéséhez semmi előismeretre nincsen szükséged. Közösen kezdjük el használni a Pythont és ismerkedünk meg a programozás alapvető építőelemeivel. Később ezeket kombináljuk és elmélyítjük tudásunk azáltal, hogy együtt oldunk meg feladatokat.
-
-
-    Vágjunk is bele, a lejátszási listát az alábbi linken találod: [🐍
-    Python alapjai](https://www.youtube.com/playlist?list=PLQlAYHQ-8OLW9pllYvte10mZbjmNnZIjX)
-    """
-    )
+    mo.md(r"""
+    ## Futtatás
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""## Python környezet kialakítása""")
-    return
+    mo.md(r"""
+    - A program futásának sorrendjét a cellák futtatási sorrendje határozza meg.
 
+    - Egy cellán belül a Python kód fentről lefelé, soronként értékelődik ki.
 
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(
-        r"""
-    A kód írásához és futtatásához a Notebook (jegyzetfüzet) formátumot fogjuk használni.
+    - A kód futtatásához kattintsunk a cellába és nyomjuk meg a Shift + Enter billentyű kombinációt.
 
-    Ez lehetővé teszi, hogy komolyabb előismeretek nélkül, a böngészőből tudjunk dolgozni, és ezáltal a lehető legegyszerűbben vághass bele a tanulásba és az alapok teljes megértésére tudj fókuszálni.
+    - Egy cellát többször is lefuttathatunk.
 
-    A jegyzetfüzet legfontosabb tulajdonságai:
-    - A jegyetfüzet cellákból áll.
-    - 2 fő típusú cella létezik, a szöveg (markdown) és a kód (python).
-    - A szöveget [markdown](https://www.markdownguide.org/cheat-sheet/) kóddal tudjuk formázni. Ha duplán rákattintunk egy szöveg cellára láthatóvá válik a kimenetet generáló kód.
-    - Kód esetén egyszerűen belekattintunk a kódba és már szerkeszthetjük is.
-    - Mindkét esetben a Shift + Enter billentyűk lenyomásával tudjuk menteni a változtatásokat.
-    """
-    )
-    return
+    - Ha a cellának van kimenete az a cella alatt jelenik meg.
 
+    - Ha hamarabb hivatkozunk egy elemre, minthogy létrehozzuk azt, hibát kapunk.
 
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""## Egyszerű példa Python kódra""")
+    - Az elmentett változók törölhetők a futtatókörnyezet újraindításával: "Futtatókörnyezet → Futtatókörnyezet újraindítása".
+    """)
     return
 
 
 @app.cell
 def _():
-    print("Helló, világ!")
+    print("Az elsőtől mindenkinek úúú de klassz a kedve.")
+    print("A második a rossz dolgokat varázsolja szebbre.")
+    return
+
+
+@app.cell
+def _():
+    print("A második a rossz dolgokat varázsolja szebbre.")
+    print("Az elsőtől mindenkinek úúú de klassz a kedve.")
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""# Tananyag szerkezeti felépítése""")
+    mo.md(r"""
+    # A Python bemutatása
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""Sokszor segít, ha már az elején látjuk, hogy pontosan miket is fogunk megtanulni. Lehet, hogy az itt felsorolt fogalmak közül sokat még nem ismersz, de ez nem probléma. Azért vagy itt (nagyon helyesen), hogy ezekkel megismerkedj.""")
+    mo.md(r"""
+    A Python bemutatást tartalmazó prezentáció: [link](https://github.com/PythonVilag/Python_alapjai/blob/main/01_A_Python_programozasi_nyelvrol/data/Python_bemutatasa/Python_bemutatasa.pdf)
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
-    0. [Bevezetés és kurzusinformációk:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/00_Bevezetes_es_kurzusinformaciok/00_Bevezetes_es_kurzusinformaciok.ipynb)
-
-      Itt vagy jelenleg. Ebben a leckében ismerjük meg a programozó környezetet, a tananyag felépítését, illetve a leckék során használt jelölésrendszert. <br> <br>
-
-    1. [A Python programozási nyelvről:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/01_A_Python_programozasi_nyelvrol/01_A_Python_programozasi_nyelvrol.ipynb)
-
-      Itt lesz szó arról, hogy miért olyan szuper a Python programozási nyelv, de a hiányosságokról is fogunk beszélni. Megértjük hogyan működik a futtatási folyamat nagy vonalakban, és hogy hol érdemes segítséget kérni ha elakadtál. <br> <br>
-
-    2. [Változók, típusok és műveleteik:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/02_Valtozok_tipusok_es_muveleteik/02_Valtozok_tipusok_es_muveleteik_elmelet.ipynb)
-
-      Bemutatásra kerülnek a változók, melyek az alapját képzik bármely programozásos feladatnak. Megtanulunk számokat/szöveget elmenteni a memóriába és különböző műveleteket végrehajtani rajtuk. <br> <br>
-
-    3. [Komment, kiírás, bekérés:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/03_Komment_kiiras_bekeres/03_Komment_kiiras_bekeres_elmelet.ipynb)
-
-      Kiegészítjük a kódunkat megértést segítő megjegyzésekkel és megtanulunk kommunikálni a külvilággal adatok bekérésén és eredmények kiírásán keresztül. <br> <br>
-
-    4. [Lista és dictionary:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/04_Lista_es_dictionary/04_Lista_es_dictionary_elmelet.ipynb)
-
-      A következő lépés, hogy megtanuljuk milyen formában tudunk több összetartozó adatot együtt tárolni. Megismerjük ezek között a fontos különbségeket, és hogy melyiket milyen körülmények között érdemes használni. <br> <br>
-
-    5. [Elágazások és igazságvizsgálat:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/05_Elagazasok_es_igazsagvizsgalat/05_Elagazasok_es_igazsagvizsgalat_elmelet.ipynb)
-
-      Létrehozunk olyan kódot, ami képes feltételekről eldönteni, hogy igazak-e, és ez alapján különbözőképpen viselkedik. <br> <br>
-
-    6. [Ciklusok és iteráció:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/06_Ciklusok_es_iteracio/06_Ciklusok_es_iteracio_elmelet.ipynb)
-
-      Megtanuljuk, hogyan tudunk elemenként végigmenni összetartozó adatokon ciklusok segítségével. Majd összehasonlítjuk és elemezzük a ciklusok fajtáit.<br> <br>
-
-    7. [Függvények létrehozása és meghívása:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/07_Fuggvenyek_letrehozasa_es_meghivasa/07_Fuggvenyek_letrehozasa_es_meghivasa_elmelet.ipynb)
-
-      Amikor egy algoritmust sokszor akarunk elvégezni, lehetőségünk van egyszer leprogramozni és a későbbiekben ugyanazt a kódrészletet meghívni. Ebben segítenek nekünk a függvények. <br> <br>
-
-    8. [Szöveges fájlok olvasása és írása:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/08_Szoveges_fajlok_olvasasa_es_irasa/08_Szoveges_fajlok_olvasasa_es_irasa_elmelet.ipynb)
-
-      Megtanuljuk a számítógépen található szöveges állományokat beolvasni, módosításokat végrehajtani rajtuk, majd kiírni őket egy új fájlba. <br> <br>
-
-    9. [Hibakezelés és hibatípusok:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/09_Hibakezeles_es_hibatipusok/09_Hibakezeles_es_hibatipusok_elmelet.ipynb)
-
-      Sokszor a program futása közben olyan nem várt esemény léphet fel amire nem tudtunk teljesen felkészülni. Ilyen esetekben meg lehet adni a programnak, hogy hol számítson hibákra és hogyan reagáljon rájuk. <br> <br>
-
-    10. [Osztályok és példányaik:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/10_Osztalyok_es_peldanyaik/10_Osztalyok_es_peldanyaik_elmelet.ipynb)
-
-      Az osztályok (class) ismerete egy új utat nyit a programozás világában. Megtanuljuk hogyan tudunk összekapcsolni különböző paramétereket és függvényeket, hogy ezek segítségével új adattípusokat hozzunk létre. <br> <br>
-
-    11. [Külső forrású kódok használata:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/11_Kulso_forrasu_kodok_hasznalata/11_Kulso_forrasu_kodok_hasznalata_elmelet.ipynb)
-
-      Itt fogjuk megtanulni, hogy hogyan tudunk mások által megírt kódot letölteni, meghívni a kódunkba és lefuttatni azt. <br> <br>
-
-    12. [Virtuális környezet alkalmazása:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/12_OPC_Virtualis_kornyezet_alkalmazasa/12_Virtualis_kornyezet_alkalmazasa.ipynb)
-
-      Megnézzük milyen esetekben és hogyan érdemes a projektjeinknek külön környezetet létrehozni, ahol minden adott a futtatásukhoz. <br> <br>
-
-    13. [Python fejlesztési környezetek:](https://colab.research.google.com/github/PythonVilag/Python_alapjai/blob/main/13_OPC_Python_fejlesztesi_kornyezetek/13_Python_fejlesztesi_kornyezetek.ipynb)
-
-      A Google Colab mellett számos egyéb módon lehet Pythonban programozni. Ezeket mutatom be, hogy ki tudd választani a hosszútávon neked legjobban tetsző módszert.
-    """
-    )
+    mo.md(r"""
+    <details>
+    <summary>Pszeudokód átalakítása Python kóddá (😊)</summary>
+    <img src="https://github.com/PythonVilag/Python_alapjai/blob/main/01_A_Python_programozasi_nyelvrol/data/pseudo.jpg?raw=true" alt="drawing" width="500"/>
+    </details>
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""# Puska""")
+    mo.md(r"""
+    # A Python működése (🐟)
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
-    A leckék anyagát tömören összefoglaló puska (cheat sheet) az alábbi linken érhető el: [Python alapjai puska](https://github.com/PythonVilag/Python_alapjai)
-
-    Érdemes lehet kinyomtatni, mert kezdetben nagyban meg tudja gyorsítani a programozást.
-    """
-    )
+    mo.md(r"""
+    A Python működését ismertető prezentáció: [link](https://github.com/PythonVilag/Python_alapjai/blob/main/01_A_Python_programozasi_nyelvrol/data/Python_mukodese/Python_mukodese.pdf)
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""# Jelölések""")
+    mo.md(r"""
+    # Segítségkérés
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""## Szövegbe integrált kódrészlet""")
+    mo.md(r"""
+    Mivel a tananyag nem tud az elérhető parancsok minden apró részletére kitérni, így fontos, hogy mi magunk is meg tudjuk keresni bizonyos problémákra a választ.
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
-    Ezt a sort követi a kód, amit nem tudunk lefuttatni, mivel szöveg típusú cellába van integrálva.
-    ```python
-    print('Helló, világ!')
-    ```
-    Ez a sor már a kód után jön.
-    """
-    )
+    mo.md(r"""
+    ## Internetes
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""## Általunk megadandó értékek""")
+    mo.md(r"""
+    ### Google kereséssel
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
-    Amikor a kódban a kötelező kulcsszavak mellett olyan helykitöltőt használok aminek a nevét nekünk kell majd megadni azt kacsacsőrök (`<>`) közé teszem és az elnevezésével utalok arra, hogy milyen jellegű értéket kell a helyére írni.
+    mo.md(r"""
+    Google-be írjuk be a problémát angolul kompakt módon kulcsszavak használatával.
 
-    ```python
-    <változó neve> = <változó értéke>
-    ```
-    """
-    )
+    Az alábbi weboldalakon lehet a legnagyobb esélyünk megtalálni amit keresünk:
+    - [https://docs.python.org/](https://docs.python.org/)
+
+    - [https://stackoverflow.com/](https://stackoverflow.com/)
+
+    - [https://www.w3schools.com/](https://www.w3schools.com/)
+
+    - [https://realpython.com/](https://realpython.com/)
+
+    - [https://www.geeksforgeeks.org/](https://www.geeksforgeeks.org/)
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""## Kód futásának szemléltetése""")
+    mo.md(r"""
+    ### Kommentben
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
-    Valahányszor új, kicsit bonyolultabb koncepciókat tanulunk, lehetőség van a [https://pythontutor.com/](https://pythontutor.com/) által biztosított, beágyazott modul segítségével a kódot soronként lefuttatni, hogy pontosan lássuk, hogy hogyan és milyen sorrendben értékelődnek ki a parancsok.
+    mo.md(r"""
+    Ha valamivel elakadnál vagy egy része a tananyagnak nem lenne tiszta, akkor írd meg kommentben a videó alatt. Megpróbálok én is segíteni, vagy mások is segíthetnek akik már utánajártak a dolognak.
 
-    Azt ehhez tartozó kódrészlet a `Show code` gomb megnyomása után válik futtathatóvá, a lentebb látható módon.
-    """
-    )
+    Ehhez hasonlóan nézz rá te is a kommentekre és segíts másoknak, ha meg van hozzá a tudásod és az időd! :)
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""## Haladó tananyag (🐟)""")
+    mo.md(r"""
+    ### Internetes fórumokon
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
-    Néhány helyen az alap tananyagot kiegészítem kicsit bonyolultabb gondolatokkal, melyket zárójelbe tett  hal emoji-val (🐟) jelölök.
+    mo.md(r"""
+    Ha a korábbiak közül egyik sem vált be, akkor még megérhet egy próbát [Reddit](https://www.reddit.com/)-en segítséget kérni.
 
-    Ezek azt a célt szolgálják, hogy megmutassanak egy másik, sokszor "pythonosabb" megoldást egy adott problémára, vagy hogy betekintést adjanak, hogy az adott témában mire érdemes még rákeresni és alaposabban utánanézni a későbbiekben.
+    Itt található a csatorna dedikált közössége [r/PythonVilag](https://www.reddit.com/r/PythonVilag/) néven.
 
-
-    Ezt azt is jelenti, hogy az adott anyagrész nem szükségszerű az alapok megértéséhez, de elég gyakori ahhoz, hogy találkozzunk vele a "nagyvilágban".
-    """
-    )
+    Ezen kívül, ha magyarul kérdeznél, akkor az [r/programmingHungary](https://www.reddit.com/r/programmingHungary/) oldalt érdemes megpróbálni, ha viszont angolul is meg tudod fogalmazni a kérdést, akkor az [r/learnpython](https://www.reddit.com/r/learnpython/) oldalon még több felhasználó tud segíteni.
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""## Vicces kép vagy videó (😊)""")
+    mo.md(r"""
+    ## Programkódos
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""Hogy a tananyag ~~kevésbé unalmas~~  könnyebben megjegyezhető legyen, megpróbáltam néhány helyen meme-ekkel kiegészíteni, melyeket a [https://www.reddit.com/r/ProgrammerHumor/](https://www.reddit.com/r/ProgrammerHumor/)-ról szereztem be.""")
+    mo.md(r"""
+    A `help` parancsot meghívva betekintést kapunk a hivatalos dokumentációba.
+    """)
+    return
+
+
+@app.cell
+def _():
+    help
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
-    Hibák keresése programozás során (😊)
-    <img src="https://github.com/PythonVilag/Python_alapjai/blob/main/00_Bevezetes_es_kurzusinformaciok/data/debugging.gif?raw=true" alt="drawing" width="500"/>
-    """
-    )
+    mo.md(r"""
+    <details>
+    <summary>Segítségkérés Pythonban (😊)</summary>
+    <img src="https://github.com/PythonVilag/Python_alapjai/blob/main/01_A_Python_programozasi_nyelvrol/data/help.jpg?raw=true" alt="drawing" width="500"/>
+    </details>
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""## Kiegészítő gondolatok""")
+    mo.md(r"""
+    Vagy még specifikusabb adatra meghívva a `help()`-et további információkhoz tudunk jutni
+    """)
+    return
+
+
+@app.cell
+def _():
+    help()
+    return
+
+
+@app.cell
+def _():
+    help(str)
+    return
+
+
+@app.cell
+def _():
+    help(str.startswith)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
-    A kiegészítő, csatolt gondolatokat a kiegészítendő cella alatt kisebb betűkkel jelölöm.
-    ```python
-    uj_valtozo = valtozo + 1
-    ```
-
-    <sup>Az előző érték megnőtt 1-el.</sup>
-    """
-    )
+    mo.md(r"""
+    # Feladatok
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""# A kód futtatható verziója""")
-    return
-
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(
-        r"""
-    Minden egyes notebook tetején elérhető a link amivel a saját Google környezetedbe tudod meghívni az aktuális leckét. Itt szabadon tudsz játszani a kóddal. Ha véletlenül kitöröltél volna valami fontosan, bármikor ismét be tudod tölteni az "eredeti" anyagot, de el is mentheted a Google Drive-odra a módosításokat.
-
-    A témakörhöz tartozó jegyzetfüzetek a [GitHub profilomon](https://github.com/PythonVilag/Python_alapjai) érhetők el, ezt tölti be a Google amikor a linkre kattintasz.
-    """
-    )
-    return
-
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""[⚡ A kód futtatható verziójának a megnyitása ⚡](#)""")
-    return
-
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""# Feladatok""")
-    return
-
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(
-        r"""
-    Az első két bevezető órához nem tartozik még gyakorlat, de ha át szeretnéd ismételni az itt tanultakat, akkor a weboldalamon minden leckéhez tartoznak feleletválasztós kérdések: <br>
-    [Bevezetés és kurzus információk](https://pythonvilag.hu/pv/python/python_alapjai/00_Bevezetes_es_kurzusinformaciok/)<br> <br>
-
-    Ezen kívül extra feladat, hogy írd le, miért szeretnél megtanulni programozni. Ezt tedd ki magad elé az asztalra, hogy amikor nehezebb témákba vágjuk a fejszénket, akkor is legyen motivációd folytatni és végül befejezni a kurzust. <br> <br>
+    mo.md(r"""
+    Ahogy az előző órán már szó volt róla ehhez az anyaghoz sem tartozik még gyakorlat, de ha át szeretnéd ismételni az itt tanultakat, akkor a weboldalamon minden leckéhez tartoznak feleletválasztós kérdések: <br>
+    [A Python programozási nyelvről](https://pythonvilag.hu/pv/python/python_alapjai/01_A_Python_programozasi_nyelvrol/)<br> <br>
 
     Találkozunk a következő leckében!
-    """
-    )
+    """)
     return
 
 

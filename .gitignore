@@ -1,4 +1,8 @@
 # Project
+__marimo__
+
+docs/*
+!docs/index.html
 
 # System
 .DS_Store
